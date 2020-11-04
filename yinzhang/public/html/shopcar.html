@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>印章材料商城-印章之家 让印章行业生意更好做</title>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <script src="../js/header.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="top color_grey f_13">
+                <div class="left">您好! <span id="user_name">访客</span> 欢迎来到印章之家平台！</div>
+                <ul class="list">
+                    <li class="px_2 sign_in">登录</li>
+                    <li class="px_2">首页</li>
+                    <li class="px_2">我的订购</li>
+                    <li class="px_2">我是供应商</li>
+                    <li class="px_2">如有疑问，请咨询网站右下角在线客服</li>
+                </ul>
+            </div>
+            <div id="search">
+                <img src="../img/index/log.png" alt="">
+                <div>
+                    <div>
+                        <div class="search">
+                            <input type="text" placeholder="搜索关键字"><button class="bg_red color_white f_16">搜索</button>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="list color_grey6 hover_red f_14">
+                            <li class="px_4">合成</li>
+                            <li class="px_4">铜章</li>
+                            <li class="px_4">创业合成红</li>
+                            <li class="px_4">回墨印</li>
+                            <li class="px_4">印台</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right f_14">
+                    <img src="../img/index/shoppongcar.png" alt="">
+                    进货单
+                    <span class="buycount bg_red color_white">0</span>
+                </div>
+            </div>
+
+        </header>
+    </div>
+
+    <div id="title">
+        <div class="container title">
+            <ul class="color_white f_17">
+                <li class="bg_red"><span><img src="../img/index/list.png" alt=""></span>分类</li>
+                <li>首页</li>
+                <li>防伪芯片公章材料</li>
+                <li>无芯片公章材料</li>
+                <li>非公章材料</li>
+                <li>耗材产品</li>
+                <li>设备产品</li>
+            </ul>
+        </div>
+       
+    </div>
+
+    <div id="shopcar" class="container">
+        
+        <div class="title color_red"><div>我的进货单</div></div>
+            
+        
+        <div>
+            <div class="trolleyHeader clear">
+                <input type="checkbox" class="el-checkbox all" value="" id="checked">
+                <label for="checked">全选</label> 
+                <span class="name">商品信息</span>
+                <span class="count">数量</span>
+                <span class="least">起订量</span>
+                <span class="buyCount">可售数量</span>
+                <span class="price">单价</span>
+                <span class="total">金额</span>
+            </div>
+        </div>
+
+        <div class="result_car">
+            
+        </div>
+       <div>
+        <div class="operator">
+            <input type="checkbox" class="el-checkbox all" value="" id="checkall"><label for="checkall">已选(<span>0</span>)</label>
+            <span class="total batch point">批量删除</span>
+            <span class="count">商品种类 <span>0</span></span>
+            <span class="least">数量总计 <span>0</span></span>
+            <span class="price">合计(不含运费)</span>
+            <span class="total">¥ <span>0</span></span>
+            <button type="button" class="gopay">结算</button>
+        </div> 
+       </div>
+        
+
+    </div>
+    
+    
+    
+   
+    <script src="../js/shopcar.js"></script>
+</body>
+</html>

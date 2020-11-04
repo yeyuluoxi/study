@@ -1,0 +1,66 @@
+
+#signin{
+    background-color:#fff;
+    width:420px;
+    height:410px;
+    border-left:1px solid #dfdfdf;
+}
+#signer{
+    padding:30px 0;
+}
+section.sign{
+    min-width: 1200px;
+    background-color:#f4f4f4;
+    padding:90px 0;
+}
+.sign>div{
+    background:url(../img/log/signin.png) no-repeat;
+    height:410px;
+    border:1px solid #dfdfdf;
+}
+
+form>div:first-child{
+    padding:30px;
+}
+form>div:first-child::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+form>div:nth-child(2){
+    padding:20px 30px;
+}
+form>div:nth-child(2)>input{
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin:10px 0;
+    outline:0;
+    border-radius:4px;
+    border:1px solid #dcdfe6;
+}
+form>div:nth-child(2)>input:first-child{
+    padding:0 15px 0 32px;
+    background:url(../img/log/name.png) no-repeat;
+}
+form>div:nth-child(2)>input:nth-child(3){
+    padding:0 15px 0 32px;
+    background:url(../img/log/password.png) no-repeat;
+}
+form>div:nth-child(2)>input:last-child{
+    margin-top:20px;
+}
+form #result{
+    height:40px;
+    line-height:40px;
+}
+form>div:nth-child(2)>input:focus{
+    border:1px solid #fe503f;
+}
+form>div:last-child{
+    padding:0 30px;
+}
+form>div:last-child>span{
+    padding:12px 5px;
+    cursor: pointer;
+}

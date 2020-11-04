@@ -1,0 +1,28 @@
+<view>
+    <view class="search">
+        <view>
+        <input type="text" placeholder="纪念册" value="{{message}}" bindinput="update"></input>
+        <image src="../../images/search.png" bindtap="tosearch"></image>
+        </view>
+    </view>
+    <view class="title flex">
+        <text>综合</text>
+        <text>价格</text>
+        <text>上新</text>
+    </view>
+    <view class="result" wx:if="{{result.length}}">
+        <view class="item flex" wx:for="{{result}}" wx:key="index" bindtap="todetail" data-pid="{{item.pid}}">
+            <image src="{{item.img}}"></image>
+            <view class="message">
+                <text class="desc">{{item.title}}</text>
+                <text class="price">¥{{item.price}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="none" wx:else>
+        <view>
+            <text>没有找到你想要的商品</text>
+            <text>换个搜索词试试</text>
+        </view>
+    </view>
+</view>

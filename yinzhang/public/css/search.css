@@ -1,0 +1,64 @@
+.page button{
+    border:0;
+    padding:0 4px;
+    min-width: 36px;
+    height:28px;
+    line-height:28px;
+    background-color:#fff;
+    cursor: pointer;
+    outline:0;
+}
+.page button:hover,.page .active{
+    color:#fe503f;
+}
+.page{
+    text-align:center;
+}
+#result .top span{
+    font-size:16px;
+    font-weight:700;
+    padding:0 4px;
+}
+
+
+#product{
+    margin-bottom:100px;
+}
+
+
+#product #result::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#product #result .top{
+    padding:10px 0 40px;
+}
+
+.result>div{
+    width:220px;
+    padding:8px;
+    float:left;
+    margin-right:20px;
+}
+.result img{
+    width:100%;
+}
+.result .pm p{
+    margin:10px 0 5px;
+}
+.result .pm p+div{
+    margin:5px 0 10px;
+}
+.result .send{
+    padding:4px;
+    color:#666;
+    font-size:3px;
+    text-align:right;
+    padding-right:10px;
+    width:70px;
+    height:20px;
+    line-height:12px;
+    background-color:#e7eaee;
+    border-radius: 10px 0 0 10px;
+}

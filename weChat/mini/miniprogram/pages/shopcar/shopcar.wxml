@@ -1,0 +1,29 @@
+<view>
+    <view wx:if="{{car.length&&uname}}" class="cars">
+        <view wx:for="{{car}}" wx:key="index" class="car flex">
+            <view><checkbox class="check" checked="{{checkboxs[index]}}" bindtap="toselect" data-index="{{index}}"></checkbox></view>
+            <view class="img" bindtap="todetail" data-pid="{{item.pid}}"><image src="{{item.img}}"></image></view>
+            <view class="mes">
+                <view class="top" bindtap="todetail" data-pid="{{item.pid}}">{{item.title}}</view>
+                <view class="bottom">
+                    <text class="price">¥{{item.price}}</text>
+                    <button bindtap="tominus" data-index="{{index}}">-</button>
+                    <input type="number" value="{{buy[index]}}" bindblur="tochange" data-index="{{index}}"></input>
+                    <button bindtap="toadd" data-index="{{index}}">+</button>
+                </view>
+            </view>
+        </view>
+        <view class="shop flex">
+            <view class="checkall"><checkbox bindtap="selectall" value="全选" checked="{{select}}"></checkbox></view>
+            <view class="total">合计<text>¥:{{total}}</text></view>
+            <view class="todo {{todo?'success':''}}">
+                <text class="buy" bindtap="del">结算</text>
+                <text class="del" bindtap="del">删除</text>
+            </view>
+        </view>
+    </view>
+    <view class="none" wx:else><image src="../../images/shopcart.png"></image>
+    <view>购物车还是空的</view>
+    <text>赶紧买点宝贝慰劳下自己吧</text>
+    </view>
+</view>

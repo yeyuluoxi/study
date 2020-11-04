@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/all/all",
+    "pages/shopcar/shopcar",
+    "pages/myself/myself",
+    "pages/hot/hot",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "国馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./images/home.png",
+      "selectedIconPath": "./images/homeon.png"
+    },{
+      "pagePath": "pages/all/all",
+      "text": "全部商品",
+      "iconPath": "./images/all.png",
+      "selectedIconPath": "./images/allon.png"
+    },{
+      "pagePath": "pages/hot/hot",
+      "text": "爆款",
+      "iconPath": "./images/hot.png",
+      "selectedIconPath": "./images/hoton.png"
+    },{
+      "pagePath": "pages/shopcar/shopcar",
+      "text": "购物车",
+      "iconPath": "./images/cart.png",
+      "selectedIconPath": "./images/carton.png"
+    },{
+      "pagePath": "pages/myself/myself",
+      "text": "我的",
+      "iconPath": "./images/myself.png",
+      "selectedIconPath": "./images/myselfon.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

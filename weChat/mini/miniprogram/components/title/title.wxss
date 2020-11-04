@@ -1,0 +1,21 @@
+.title{
+padding:8px 0;
+display:flex;
+white-space: nowrap;
+height:30px;
+}
+.title .label{
+
+display:inline-block;
+padding:0 8px;
+}
+.title .active{
+color:#f44;
+}
+.title .active .view{
+min-width: 20rpx;
+width:40%;
+border:2px solid #f44;
+margin:4px auto;
+border-radius:4px;
+}

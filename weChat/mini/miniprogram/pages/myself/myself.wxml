@@ -1,0 +1,28 @@
+<view>
+    <view class="avatar">
+        <view class="img" wx:if="{{avatar}}">
+            <image src="{{avatar}}"></image>
+        </view>
+        <view class="uname"><text wx:if="{{uname}}">{{uname}}</text><button wx:else open-type="getUserInfo" bindgetuserinfo="getinfo">点击登录</button>
+        </view>
+    </view>
+    <view class="center">
+        <view class="message"></view>
+        <view class="orders">
+            <view class="title">我的订单 <text>查看全部订单 ></text></view>
+            <view class="flex order">
+                <view wx:for="{{order}}" wx:key="index">
+                    <image src="{{item.img}}" mode="widthFix"></image>
+                    <text>{{item.title}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="shop">
+            <view>购物车 <text>></text></view>
+            <view>返现 <text>></text></view>
+        </view>
+        <view class="config">
+            <view wx:for="{{config}}" wx:key="index">{{item}} <text>></text></view>
+        </view>
+    </view>
+</view>

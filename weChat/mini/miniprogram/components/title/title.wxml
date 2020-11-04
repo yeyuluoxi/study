@@ -1,0 +1,6 @@
+<scroll-view scroll-x="true" class="title" bindtap="select" enable-flex="true">
+    <label wx:for="{{titles}}" data-order="{{index}}" class="label {{active==index?'active':''}}" wx:key="index">
+        {{item}}
+        <view class="view"></view>
+    </label>
+</scroll-view>

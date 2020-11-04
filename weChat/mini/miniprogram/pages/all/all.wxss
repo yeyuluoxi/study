@@ -1,0 +1,61 @@
+.all scroll-view{
+    height:100vh;
+}
+.all .group{
+    float:left;
+    width:25vw;
+    background-color:#f8f8f8;
+}
+.all .classify{
+    margin-left:25vw;
+    width:75vw;
+    color:#3a3a3a;
+}
+.group label{
+    width:100%;
+    text-align:center;
+    display:inline-block;
+    padding: 40rpx 32rpx;
+    border: none;
+}
+.group label.active{
+    background-color:#fff;
+    position:relative;
+}
+.group label.active::before{
+    content:"";
+    display:inline-block;
+    width:8rpx;
+    height:32rpx;
+    background-color:#ee0a24;
+    position:absolute;
+    left:0;
+}
+.items{
+    padding:0 30rpx;
+}
+.items .cont{
+    flex-wrap: wrap;
+    width:100%;
+}
+.classify .item{
+    flex:0 0 33.33%;
+    margin-bottom:30rpx;
+    min-width: 30%;
+    padding:20rpx;
+}
+.item view{
+    width:100%;
+    font-size: small;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    overflow: hidden;
+}
+.classify label image{
+    width:100%;
+    margin-bottom:20rpx;
+}
+.classify .bottom{
+    height:80vh;
+}

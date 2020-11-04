@@ -1,0 +1,21 @@
+<view class="hot">
+    <view class="top">
+        <image src="../../images/hotsales.png" mode="widthFix"></image>
+    </view>
+    <view class="product" wx:if="{{first}}">
+        <view class="first" data-pid="{{first.pid}}" bindtap="detail">
+            <image src="{{first.img}}"></image>
+            <view class="title">{{first.title}}</view>
+            <view class="price">¥{{first.price}}</view>
+        </view>
+        <view class="list flex">
+            <view wx:for="{{products}}" wx:key="index" class="item" data-pid="{{item.pid}}" bindtap="detail">
+                <image src="{{item.img}}" mode="widthFix"></image>
+                <view class="text">
+                    <view class="title">{{item.title}}</view>
+                    <view class="price">¥{{item.price}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

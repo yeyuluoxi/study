@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="search">
+    <view>
+      <input type="text" placeholder="纪念册" value="{{title}}" bindinput="update"></input>
+      <image src="../../images/search.png" bindtap="tosearch"></image>
+    </view>
+  </view>
+  <title titles="{{titles}}" />
+  <swiper circular="true" indicator-dots="true" autoplay="true" indicator-color="#fff" indicator-active-color="#FF814A" class="banner" style="height:{{wd}}">
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" bindload="wh"  style="height:{{wd}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="groups" wx:if="{{productlist.length}}">
+    <view class="group" wx:for="{{productlist}}" wx:key="ind" wx:for-index="ind" wx:for-item="elem">
+      <view class="groupimg" data-gid="{{group[ind].gid}}">
+        <image mode="widthFix" src="{{group[ind].img}}"></image>
+      </view>
+      <title titles="{{classname[ind+1]}}" />
+      <view class="products flex">
+        <view class="product" data-pid="{{item.pid}}" wx:for="{{elem}}" wx:key="index" enable-flex="true" bindtap="detail">
+          <image src="{{item.img}}" mode="widthFix"></image>
+          <view class="title">{{item.title}}</view>
+          <view class="price"><text>¥</text>{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="buy"></view>
+</view>

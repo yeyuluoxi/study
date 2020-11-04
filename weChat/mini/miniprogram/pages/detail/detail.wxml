@@ -1,0 +1,54 @@
+<view>
+    <view class="top" wx:if="{{banners}}">
+        <swiper circular="true" autoplay="true" indicator-active-color="#FF814A" bindchange="wd" style="height:{{he+'rpx'}}">
+            <swiper-item wx:for="{{banners}}" wx:key="index">
+                <image src="{{item}}" mode="widthFix" bindload="we"></image>
+            </swiper-item>
+        </swiper>
+        <view class="index">{{active||1}}/{{banners.length}}</view>
+    </view>
+    <view class="message" wx:if="{{data}}">
+        <view class="price">¥<text>{{data.price}}</text></view>
+        <view class="title">{{data.title}}</view>
+        <text class="border"></text>
+        <view><text class="light">运费</text>¥0.00~5.00</view>
+        <text class="border"></text>
+        <view><text class="light">服务</text>收货后结束·快递发货</view>
+        <text class="border"></text>
+        <view><text class="light">购买</text><button bindtap="minus" class="minus">-</button><text class="buy">{{buy}}</text><button bindtap="add" class="add">+</button></view>
+        <text class="border"></text>
+    </view>
+
+
+    <view class="bottom" wx:if="{{details}}">
+        <image wx:for="{{details}}" wx:key="index" src="{{item}}" mode="widthFix"></image>
+        <image mode="widthFix" src="cloud://yeluoxi.7965-yeluoxi-1302923368/mini-guo/products/d001.webp"></image>
+        <image mode="widthFix" src="cloud://yeluoxi.7965-yeluoxi-1302923368/mini-guo/products/d002.webp"></image>
+    </view>
+
+    <view>
+        <view class="btm_tool">
+            <view class="tool_item">
+            <view class="left-icons">
+                <image mode="widthFix" src="../../images/contact.png"></image>
+            </view>
+            <view>客服</view>
+            <button open-type="contact"></button>
+            </view>
+            <navigator class="tool_item" open-type="switchTab" url="/pages/index/index">
+            <view class="left-icons">
+                <image mode="widthFix" src="../../images/shop.png"></image>
+            </view>
+            <view>店铺</view>
+            </navigator>
+            <navigator class="tool_item" open-type="switchTab" url="/pages/shopcar/shopcar">
+            <view class="left-icons">
+                <image mode="widthFix" src="../../images/shopcar.png"></image>
+            </view>
+            <view>购物车</view>
+            </navigator>
+            <view class="btn_cart" bindtap="addcart">加入购物车</view>
+            <view class="btn_buy">立即购买</view>
+        </view>
+    </view>
+</view>

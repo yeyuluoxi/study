@@ -1,0 +1,166 @@
+
+
+.minus,.add{
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    background: #f5f6fb;
+    text-align: center;
+    cursor: pointer;
+    outline:0;
+}
+.minus+input{
+    height: 22px;
+    width: 48px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    padding: 0 4px;
+    outline:0;
+}
+
+
+.result_car{
+    margin-bottom:40px;
+}
+.car{
+    margin: 12px 0 20px;
+    border: 1px solid #d9d9d9;
+}
+.car .product>div{
+    display:inline-block;
+    padding:10px 0;
+    height:120px;
+    text-align:center;
+    vertical-align: top;
+    padding:40px 5px;
+    width:10%;
+}
+.car .product>div:first-child{
+    padding:10px 5px;
+    width:20px;
+}
+.car .product>div.picture{
+    padding:10px 0px;
+    width:10%;
+}
+.car .product>div.picture img{
+    height:100%;
+}
+.car .product>div:nth-child(3){
+    text-align:left;
+    padding:10px 0;
+    width:28%;
+}
+.car .product>div:nth-child(3) p{
+    padding:10px 0 25px 5px;
+}
+.car .product>div:last-child{
+    cursor: pointer;
+    width:4%;
+}
+
+
+#shopcar .company{
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px;
+    background: #f2f0ff;
+}
+#shopcar .company span{
+    padding-left:10px;
+    margin-right:100px;
+}
+
+
+
+#shopcar .title div{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+    border-bottom: 3px solid red;
+}
+#shopcar .title{
+    height: 50px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom:20px;
+}
+.trolleyHeader{
+    margin: 12px 0 14px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e3e3e3;
+    background: #f2f2f2;
+    padding-left: 10px;
+}
+
+#shopcar .all+label{
+    width:10%;
+    display:inline-block;
+}
+.trolleyHeader span{
+    text-align:center;
+    display:inline-block;
+}
+.trolleyHeader .name{
+    text-align:left;
+    width:25%;
+}
+.trolleyHeader .count{
+    width:15%;
+}
+.trolleyHeader .least{
+    width:8%;
+}
+.trolleyHeader .buyCount{
+    width:10%;
+}
+.trolleyHeader .price{
+    width:10%;
+}
+.trolleyHeader .total{
+    width:10%;
+}
+
+
+.operator{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e3e3e3;
+    background: #f2f2f2;
+    padding-left: 10px;
+    position: fixed;
+    min-width:1200px;
+    bottom: 0;
+    margin: 0;
+}
+.operator span{
+    display:inline-block;
+    text-align:center;
+}
+.operator .batch{
+    width:8%;
+}
+.operator .count{
+    width:10%;
+}
+.operator .least{
+    width:12%;
+}
+.operator .price{
+    width:10%;
+}
+.operator .total{
+    width:12%;
+}
+.operator button{
+    height:40px;
+    width: 140px;
+    background: red;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    float: right;
+}

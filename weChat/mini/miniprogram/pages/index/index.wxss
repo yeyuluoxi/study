@@ -1,0 +1,63 @@
+.banner,.banner swiper-item{
+  width:100%;
+  height:auto;
+}
+.banner image{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:8px;
+}
+
+.search view{
+  position:relative;
+}
+.search input{
+  height:30px;
+  width:90%;
+  margin-left:5%;
+  background-color:lightgrey;
+  border-radius:20px;
+  padding-left:60rpx;
+}
+.search image{
+  position:absolute;
+  width:16px;
+  height:16px;
+  left:50rpx;
+  top:7px;
+}
+.groups{
+  padding:20rpx 10rpx;
+}
+.groupimg image{
+  width:100%;
+  max-width:100%;
+}
+.products{
+  justify-content: start;
+}
+.products .product{
+  width:50%;
+  padding:8rpx;
+}
+.product image{
+  max-width: 100%;
+}
+.product .title{
+  height: 34px;
+  max-height: 34px;
+  font-size: 13px;
+  line-height: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product .price{
+  color:#f44;
+  height: 18px;
+  font-size: 18px;
+  line-height: 18px;
+}
+.product .text{
+  font-size:small;
+}

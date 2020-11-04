@@ -1,0 +1,20 @@
+<view>
+
+    <view wx:if="{{group.length}}" class="all">
+        <scroll-view scroll-y="true" class="group" bindtap="moveto">
+            <label wx:for="{{group}}" wx:key="index" class="{{active==index?'active':''}}" data-gid="{{item.gid-1}}">{{item.group}}</label>
+        </scroll-view>
+        <scroll-view scroll-y="true" class="classify" scroll-with-animation="true" scroll-into-view="a{{movei}}" bindscroll="move">
+            <view wx:for="{{group}}" wx:for-index="ind" wx:key="ind" wx:for-item="elem" class="items" id="a{{elem.gid-1}}">
+                <view class="title">{{elem.group}}</view>
+                <view class="flex cont">
+                    <label wx:for="{{classify[elem.gid]}}" wx:key="index" class="item" data-cid="{{item.cid}}" bindtap="tosearch">
+                        <image src="{{item.img}}" mode="widthFix"></image>
+                        <view>{{item.classify}}</view>
+                    </label>
+                </view>
+            </view>
+            <view class="bottom"></view>
+        </scroll-view>
+    </view>
+</view>

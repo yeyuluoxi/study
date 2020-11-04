@@ -1,0 +1,164 @@
+
+#details .top .p_title{
+    height:60px;
+    line-height:60px;
+    font-weight: 600;
+}
+#details .top::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#details .picture{
+    width:38%;
+}
+#details .price{
+    width:58%;
+    text-align: left;
+}
+
+.picture .main{
+    padding:5px;
+}
+.picture .main img{
+    width:100%;
+}
+.picture .main+div{
+    width:100%;
+    height:80px;
+}
+.picture .main+div>div{
+    text-align:center;
+    height:inherit;
+    float:left;
+    width:10%;
+    padding-top:10px;
+}
+.picture .main+div .list_p{
+    overflow: hidden;
+
+    padding:0;
+    width:80%;
+}
+.picture .list_p img{
+    width:80%;
+}
+.picture .list_p>div{
+    flex-flow: nowrap;
+    display:flex;
+    width:100%;
+    height:100%;
+}
+.picture .list_p>div>div{
+    flex:0 0 25%;
+    height:100%;
+}
+
+#details .price>div:first-child{
+    height: 60px;
+    background-color: #fdf0ef;
+    padding:12px 0 12px 8px;
+    line-height:36px;
+}
+#details .price>div:first-child span:last-child{
+    padding: 2px 10px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid #fe503f;
+}
+
+
+#details .table_p>div:first-child{
+    color: #999;
+    line-height: 20px;
+    border-bottom: 1px solid #eee;
+}
+#details .table_p>div>div{
+    float:left;
+    padding:10px;
+}
+#details .table_p>div>div:first-child{
+    width:40%;
+}
+#details .table_p>div>div:nth-child(2){
+    width:12%;
+}
+#details .table_p>div>div:nth-child(3){
+    width:13%;
+}
+#details .table_p>div>div:nth-child(4){
+    width:20%;
+}
+#details .table_p>div>div:last-child{
+    width:15%;
+}
+.minus,.add{
+    width: 22px;
+    height: 22px;
+    line-height: 20px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    background: #f5f6fb;
+    text-align: center;
+    cursor: pointer;
+    outline:0;
+}
+.minus+input{
+    height: 22px;
+    width: 48px;
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    padding: 0 4px;
+    outline:0;
+}
+
+#details .bottom>div:first-child{
+    border-top: 1px solid #eee;
+    padding:10px;
+}
+#details .bottom>div:first-child span{
+    margin:0 40px 0 10px;
+}
+#details .bottom>div:last-child button:first-child{
+    display: inline-block;
+    line-height: 1;
+    cursor: pointer;
+    width: 160px;
+    background-color: #fe503f;
+    color: #fff;
+    border: 1px solid #dcdfe6;
+    text-align: center;
+    outline: 0;
+    margin: 0;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+#details .bottom>div:last-child button:last-child{
+    display: inline-block;
+    line-height: 1;
+    width:160px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    text-align: center;
+    outline: 0;
+    margin-left:10px;
+    transition: .1s;
+    font-weight: 500;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+#details .message{
+    margin:20px 0;
+}
+#details .message .company{
+    width:20%;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    min-height: 240px;
+}
+#details .message .intr{
+    width:78%;
+}
